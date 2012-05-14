@@ -26,7 +26,7 @@ std::pair<int, int> edgeIDToArcIDs(int edgeID) {
     return std::make_pair(2 * edgeID, 2 * edgeID + 1);
 }
 
-class UndirectedGraph: public DirectedGraph {
+class UndirectedGraph: public directed_graph::DirectedGraph {
 pubic:
     UndirectedGraph(int nodesNumber, const std::vector<InputEdge> &edges);
 
