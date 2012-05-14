@@ -12,12 +12,6 @@ struct InputEdge {
     int v2;
 };
 
-struct Edge {
-    int v1;
-    int v2;
-    int id;
-};
-
 int arcIDToEdgeID(int arcID) {
     return arcID / 2;
 }
