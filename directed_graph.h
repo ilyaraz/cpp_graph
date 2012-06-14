@@ -4,12 +4,20 @@
 
 #include <vector>
 
-namespace cpp_graph {
+namespace irg {
 namespace directed_graph {
 
 struct InputArc {
     int tail;
     int head;
+
+    InputArc()
+        : tail(0)
+        , head(0) {}
+
+    InputArc(int tail, int head)
+        : tail(tail)
+        , head(head) {}
 };
 
 struct Arc {

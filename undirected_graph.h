@@ -4,12 +4,20 @@
 
 #include <utility>
 
-namespace cpp_graph {
+namespace irg {
 namespace undirected_graph {
 
 struct InputEdge {
     int v1;
     int v2;
+
+    InputArc()
+        : v1(0)
+        , v2(0) {}
+
+    InputArc(int v1, int v2)
+        : v1(v1)
+        , v2(v2) {}
 };
 
 int arcIDToEdgeID(int arcID) {
