@@ -12,8 +12,8 @@ struct InputArc {
     int head;
 
     InputArc()
-        : tail(0)
-        , head(0) {}
+        : tail(-1)
+        , head(-1) {}
 
     InputArc(int tail, int head)
         : tail(tail)
